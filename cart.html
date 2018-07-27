@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="cart.css">
+        <title>My Orders</title>
+    </head>
+    <body> <div class="main">
+        <div class= "grocery">
+            <center> 
+              <input type="text" id="search" placeholder="Search"/>
+              <input type="button" id="search1" onclick="Search()" value="Search"/>
+            </center>
+            <div id="store"></div>
+            <p id></p>
+           <div class="submit">
+            <input type="button" id="reset" onclick="Reset()" value="Reset"/>
+            <input type="button" id="add"  onclick="Add()" value="Add"/>
+        </div>
+     
+        </div>  
+        
+        <div class="cart">
+            <center><h1>Cart</h1></center>
+            <div id="product"></div>
+                <input type="button" id="checkout" onclick="Checkout()" value="Checkout"/>
+                
+     
+        </div>
+        </div>
+    </body>
+    <script src="cart.js"></script>
+</html>
