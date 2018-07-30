@@ -294,10 +294,12 @@ var dairy=[
             combine2[i].quant=0;
         }
     }
-    
+     bill=0;
+     detail="";
+      products="";
     function Add()
-    {
-        var products="";
+    {   
+        
         var products="<table><tr><th>Name</th><th>Quantity</th></tr>";
         for(let k=0; k<combine2.length; k++)
         {
@@ -307,9 +309,19 @@ var dairy=[
             if(combine2[k].quant>0)
             {
                 products+="<tr><td>"+combine2[k].name+"</td><td>"+combine2[k].quant+"</td></tr>";
+                bill+= combine2[k].price*combine2[k].quant;
+                detail+= "<tr><td>"+combine2[k].name+"</td><td>"+combine2[k].quant+"</td></tr>"+combine2[k].price+"</td></tr>"+bill+"</td></tr>";
             }
         }
         }
         products+="</table>"
         document.getElementById("product").innerHTML=products;
+    }
+
+    function Checkout()
+    { var total;
+      console.log("hii")
+    localStorage.setItem("price",detail);
+    localStorage.setItem("result",products);
+    localStorage.setItem("total",bill);
     }
