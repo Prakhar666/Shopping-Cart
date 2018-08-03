@@ -3,11 +3,18 @@
         <link rel="stylesheet" type="text/css" href="cart.css">
         <title>My Orders</title>
     </head>
-    <body> <div class="main">
+   
+    <body> 
+       
+            <div class="main">
+                <img src="logo.png">
+            </div>
         <div class= "grocery">
             <center> 
+                <div class= "get">
               <input type="text" id="search" placeholder="Search"/>
               <input type="button" id="search1" onclick="Search()" value="Search"/>
+                </div>
             </center>
             <div id="store"></div>
             <p id></p>
@@ -20,16 +27,17 @@
         
         <div class="cart">
             <center><h1>Cart</h1></center>
-            <div id="product"></div>
+            <table border=1 id="product"></table>
                
                
-                <a href="next.html"> <button id ="checkout" onclick="Checkout()" > Check Out</button></a>
+                <a href="payment.html"> <button id ="checkout" onclick="Checkout()" > Check Out</button></a>
                 
 
      
         </div>
-        </div>
-
+       
+    </div>
     </body>
+
     <script src="cart.js"></script>
 </html>

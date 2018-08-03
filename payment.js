@@ -1,12 +1,12 @@
 var name=localStorage.getItem("result");
-//for table with bill
-var price=localStorage.getItem("price");
-//console.log(price);
-var TotalBill = localStorage.getItem("total");
-//console.log(name);
-//console.log(TotalBill);
-let totaldata ='<td colspan="3" >'+name+'</td><td>'+TotalBill+'</td>';
+
+var price=localStorage.getItem("fprice");
+
+var Total = localStorage.getItem("total");
+console.log(Total);
+let totaldata ='<td colspan="3">Total</td><td>'+Total+'</td>';
 name+=totaldata;
-document.getElementById("content").innerHTML=price;
-document.getElementById("total").innerHTML=TotalBill;
+console.log(name)
+document.getElementById("content").innerHTML=name;
+//document.getElementById("total").innerHTML=Total;
 
